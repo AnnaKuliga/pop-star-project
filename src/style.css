@@ -1,0 +1,69 @@
+:root {
+  --primary-color: rgb(250, 229, 229);
+  --header-font: "Explora", cursive;
+  --main-font: "Playfair Display", serif;
+}
+body {
+  background-color: rgb(241, 241, 241);
+  font-family: var(--main-font);
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/293/original/sanah.jpg?1674585373");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--primary-color);
+  font-family: var(--header-font);
+  padding: 100px 25px 280px;
+}
+header h1 {
+  font-weight: 700px;
+  font-size: 96px;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: uppercase;
+}
+header h2 {
+  font-weight: 400px;
+  font-size: 58px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+header .hero-btn {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-weight: 700px;
+  font-size: 35px;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 50px 15px 160px;
+  }
+  header h1 {
+    font-size: 46px;
+  }
+  header h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  header .hero-btn {
+    font-size: 22px;
+    padding: 10px 15px;
+  }
+}
