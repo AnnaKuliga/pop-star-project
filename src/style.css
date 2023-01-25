@@ -34,13 +34,35 @@ footer p {
 }
 .container {
   background-color: rgb(17, 17, 17);
-  max-width: 1000px;
+  color: var(--primary-color);
   margin: 0 auto;
+  max-width: 1000px;
+  padding: 50px;
+}
+.container h3 {
+  font-size: 20px;
+}
+.container img {
+  border-radius: 4px;
+  max-width: 250px;
+  transition: all 150ms ease-in-out;
+}
+.container img:hover {
+  transform: scale(1.2);
+}
+.container p {
+  font-size: 14px;
+  text-align: justify;
 }
 .grid {
   padding: 30px 30px 0;
   display: grid;
   grid-gap: 20px;
+  margin: 40px 0;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
 }
 .grid-3-columns-footer {
   grid-template-columns: 2fr 2fr 2fr;
@@ -87,7 +109,18 @@ footer p {
 .links {
   padding: 0 0 20px;
 }
-
+.signature {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px 0;
+}
+.signature img {
+  max-width: 1000px;
+  transition: all 150ms ease-in-out;
+}
+.signature img:hover {
+  transform: scale(1.2);
+}
 @media (max-width: 900px) {
   .hero h1 {
     font-size: 46px;
