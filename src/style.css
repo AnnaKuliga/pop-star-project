@@ -122,6 +122,21 @@ footer p {
   transform: scale(1.2);
 }
 @media (max-width: 900px) {
+  .container img {
+    max-width: 180px;
+    margin: 10px 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+  }
+  .grid-2-columns {
+    grid-gap: 0;
+  }
   .hero h1 {
     font-size: 46px;
   }
@@ -132,6 +147,12 @@ footer p {
   .hero .hero-btn {
     font-size: 22px;
     padding: 10px 15px;
+  }
+  .signature {
+    text-align: center;
+  }
+  .signature img {
+    max-width: 300px;
   }
 }
 
