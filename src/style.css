@@ -40,6 +40,33 @@ footer p {
   margin: 30px 0;
   width: 100%;
 }
+.calum-bio {
+  text-align: right;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/358/original/calum_scott.jpg?1674639763");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--primary-color);
+  margin: 0 auto;
+  padding: 250px;
+  width: 100%;
+}
+.calum-bio h5 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding: 20px;
+}
+.calum-bio a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+.calum-bio a:hover {
+  color: var(--hover-link-color);
+}
+.calum-bio i {
+  font-size: 30px;
+  padding: 10px;
+}
 .container {
   background-color: rgb(17, 17, 17);
   border-radius: 10px;
