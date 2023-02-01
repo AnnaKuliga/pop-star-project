@@ -13,6 +13,7 @@ body {
 }
 footer {
   color: var(--secondary-color);
+  margin-top: 80px;
 }
 footer a {
   color: var(--secondary-color);
@@ -48,7 +49,6 @@ footer p {
   background-size: cover;
   color: var(--primary-color);
   margin: 0 auto;
-  padding: 250px;
   width: 100%;
 }
 .calum-bio h5 {
@@ -182,6 +182,12 @@ footer p {
   padding: 30px 0;
 }
 @media (max-width: 900px) {
+  footer {
+    margin-top: 30px;
+  }
+  .boxes {
+    grid-template-columns: 1fr;
+  }
   .calum-bio {
     text-align: center;
   }
