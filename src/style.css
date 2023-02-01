@@ -1,10 +1,11 @@
 :root {
+  --artistic-font: "Explora", cursive;
+  --body-color: rgb(241, 241, 241);
+  --header-font: "Prata", serif;
+  --hover-link-color: #8277ac;
+  --main-font: "Playfair Display", serif;
   --primary-color: rgb(224, 224, 224);
   --secondary-color: #272044;
-  --hover-link-color: #8277ac;
-  --body-color: rgb(241, 241, 241);
-  --header-font: "Explora", cursive;
-  --main-font: "Playfair Display", serif;
 }
 body {
   background-color: var(--body-color);
@@ -115,8 +116,10 @@ footer p {
   width: 100%;
 }
 .hero h1 {
+  font-family: var(--header-font);
   font-weight: 700px;
   font-size: 96px;
+  letter-spacing: 3px;
   line-height: 1.5;
   margin: 0;
   text-transform: uppercase;
@@ -124,10 +127,10 @@ footer p {
 .hero h2 {
   font-family: var(--header-font);
   font-weight: 400px;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 50px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 .hero-content {
   padding: 100px;
@@ -158,7 +161,7 @@ footer p {
 .signature {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 40px 0;
+  padding: 80px 0;
 }
 .signature img {
   max-width: 1000px;
@@ -179,6 +182,17 @@ footer p {
   padding: 30px 0;
 }
 @media (max-width: 900px) {
+  .calum-bio {
+    text-align: center;
+  }
+  .calum-bio a {
+    color: var(--body-color);
+  }
+  .calum-bio h5 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px;
+  }
   .container img {
     max-width: 180px;
     margin: 10px 0;
