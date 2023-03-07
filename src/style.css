@@ -76,12 +76,20 @@ footer p {
   max-width: 1000px;
   padding: 50px;
 }
+.first {
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.second {
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+}
 .container h3 {
   font-size: 20px;
 }
 .container img {
   border-radius: 4px;
-  max-width: 250px;
+  max-width: 240px;
   transition: all 150ms ease-in-out;
 }
 .container img:hover {
@@ -155,6 +163,11 @@ footer p {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+.image {
+  position: relative;
+  right: -75px;
+  bottom: -30px;
 }
 .links {
   padding: 0 0 20px;
