@@ -227,8 +227,10 @@ footer p {
     padding: 10px;
   }
   .container img {
-    max-width: 180px;
-    margin: 10px 0;
+    display: none;
+  }
+  .container p {
+    font-size: 12px;
   }
   .exploreBtn {
     display: none;
@@ -260,6 +262,9 @@ footer p {
   }
   .signature img {
     max-width: 300px;
+  }
+  .youtube {
+    display: none;
   }
 }
 
