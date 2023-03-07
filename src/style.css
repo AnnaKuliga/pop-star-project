@@ -91,6 +91,11 @@ footer p {
   font-size: 14px;
   text-align: justify;
 }
+
+.exploreBtn:hover {
+  background-color: rgba(255, 255, 255, 0.719);
+  color: rgba(0, 0, 0, 0.731);
+}
 .grid {
   padding: 30px 30px 0;
   display: grid;
@@ -115,14 +120,16 @@ footer p {
   margin: 0 auto;
   width: 100%;
 }
+
 .hero h1 {
   font-family: var(--header-font);
   font-weight: 700px;
-  font-size: 96px;
+  font-size: 76px;
   letter-spacing: 3px;
   line-height: 1.5;
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
 }
 .hero h2 {
   font-family: var(--header-font);
@@ -133,7 +140,7 @@ footer p {
   letter-spacing: 2px;
 }
 .hero-content {
-  padding: 100px;
+  padding: 150px 20px;
 }
 .hero .hero-btn {
   background-color: transparent;
@@ -157,7 +164,12 @@ footer p {
   max-width: 1000px;
   padding: 40px 0;
 }
-
+.navbar-brand {
+  padding: 10px 10px 10px 250px;
+}
+.nav-item {
+  padding: 20px;
+}
 .signature {
   margin: 0 auto;
   max-width: 1000px;
@@ -203,6 +215,9 @@ footer p {
     max-width: 180px;
     margin: 10px 0;
   }
+  .exploreBtn {
+    display: none;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -214,6 +229,9 @@ footer p {
   .grid-2-columns {
     grid-gap: 0;
   }
+  .hero-content {
+    padding: 50px 20px 35px 20px;
+  }
   .hero h1 {
     font-size: 46px;
   }
@@ -221,10 +239,7 @@ footer p {
     font-size: 32px;
     margin-bottom: 25px;
   }
-  .hero .hero-btn {
-    font-size: 22px;
-    padding: 10px 15px;
-  }
+
   .signature {
     text-align: center;
   }
