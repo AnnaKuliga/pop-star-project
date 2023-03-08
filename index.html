@@ -38,14 +38,364 @@
       href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="" />
     <meta
       name="description"
       content="This website was created as a part of SheCodes challenges project to
             develop my coding skills. This project was coded by Anna Kuliga and it is open-sourced. The website presents Calum Scott."
     />
     <title>Calum Scott - funpage</title>
-    <style></style>
+    <style>
+      :root {
+        --artistic-font: "Explora", cursive;
+        --body-color: rgb(241, 241, 241);
+        --header-font: "Prata", serif;
+        --hover-link-color: #8277ac;
+        --main-font: "Playfair Display", serif;
+        --primary-color: rgb(224, 224, 224);
+        --secondary-color: #272044;
+      }
+      body {
+        background-color: var(--body-color);
+        font-family: var(--main-font);
+      }
+      footer {
+        color: var(--secondary-color);
+        margin-top: 80px;
+      }
+      footer a {
+        color: var(--secondary-color);
+        font-size: 13px;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: var(--hover-link-color);
+      }
+      footer i {
+        font-size: 18px;
+      }
+      footer h4 {
+        font-size: 20px;
+      }
+      footer p {
+        font-size: 13px;
+        margin: 0;
+        padding: 10px;
+        text-align: justify;
+      }
+      .boxes {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 30px 0;
+        width: 100%;
+      }
+      .calum-bio {
+        text-align: right;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/358/original/calum_scott.jpg?1674639763");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: var(--primary-color);
+        margin: 0 auto;
+        width: 100%;
+      }
+      .calum-bio h5 {
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding: 20px;
+      }
+      .calum-bio a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        transition: all 150ms ease-in-out;
+      }
+      .calum-bio a:hover {
+        color: var(--hover-link-color);
+      }
+      .calum-bio i {
+        font-size: 30px;
+        padding: 10px;
+      }
+      .container {
+        background-color: rgb(17, 17, 17);
+        border-radius: 10px;
+        color: var(--primary-color);
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 50px;
+      }
+
+      .container h3 {
+        font-size: 20px;
+      }
+      .container img {
+        border-radius: 4px;
+        max-width: 240px;
+        transition: all 150ms ease-in-out;
+      }
+      .container img:hover {
+        transform: scale(1.2);
+      }
+      .container p {
+        font-size: 14px;
+        text-align: justify;
+      }
+
+      .exploreBtn:hover {
+        background-color: rgba(255, 255, 255, 0.719);
+        color: rgba(0, 0, 0, 0.731);
+      }
+      .form {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      .form form {
+        border: 1px solid var(--primary-color);
+        border-radius: 8px;
+        background-color: rgba(252, 252, 252, 0.619);
+      }
+      .first {
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+      }
+
+      .grid {
+        padding: 30px 30px 0;
+        display: grid;
+        grid-gap: 10px;
+        margin: 40px 0;
+      }
+      .grid-2-columns {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 70px;
+      }
+      .grid-3-columns {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .grid-3-columns-footer {
+        grid-template-columns: 2fr 2fr 2fr;
+      }
+      .hero {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/354/original/calum_scott4.jpg?1674635327");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: var(--primary-color);
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-family: var(--header-font);
+        font-weight: 700px;
+        font-size: 76px;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .hero h2 {
+        font-family: var(--header-font);
+        font-weight: 400px;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+      }
+      .hero-content {
+        padding: 150px 20px;
+      }
+      .hero .hero-btn {
+        background-color: transparent;
+        border: 1px solid var(--primary-color);
+        border-radius: 50%;
+        color: var(--primary-color);
+        font-weight: 700px;
+        font-size: 35px;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .image {
+        position: relative;
+        right: -75px;
+        bottom: -30px;
+      }
+      .links {
+        padding: 0 0 20px;
+      }
+      .music {
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 40px 0;
+      }
+      .navbar-brand {
+        padding: 10px 10px 10px 250px;
+      }
+      .nav-item {
+        padding: 20px;
+      }
+      .second {
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      .signature {
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 80px 0;
+      }
+      .signature img {
+        max-width: 1000px;
+        transition: all 150ms ease-in-out;
+      }
+      .signature img:hover {
+        transform: scale(1.2);
+      }
+      .video {
+        width: 100%;
+        margin: 0 auto;
+        aspect-ratio: 21/9;
+        border-radius: 8px;
+      }
+      .youtube {
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 30px 0;
+      }
+      @media (max-width: 900px) {
+        footer {
+          margin-top: 30px;
+        }
+        .boxes {
+          grid-template-columns: 1fr;
+        }
+        .calum-bio {
+          text-align: center;
+        }
+        .calum-bio a {
+          color: var(--body-color);
+        }
+        .calum-bio h5 {
+          font-size: 20px;
+          letter-spacing: 2px;
+          padding: 10px;
+        }
+        .container img {
+          display: none;
+        }
+        .container p {
+          font-size: 12px;
+        }
+        .exploreBtn {
+          display: none;
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 8px;
+          margin: 0;
+          padding: 15px;
+          text-align: center;
+        }
+        .grid-2-columns {
+          grid-gap: 0;
+        }
+        .hero-content {
+          padding: 50px 20px 35px 20px;
+        }
+        .hero h1 {
+          font-size: 46px;
+        }
+        .hero h2 {
+          font-size: 32px;
+          margin-bottom: 25px;
+        }
+
+        .signature {
+          text-align: center;
+        }
+        .signature img {
+          max-width: 300px;
+        }
+        .youtube {
+          display: none;
+        }
+      }
+
+      .downArrow {
+        position: fixed;
+        bottom: 15%;
+        left: 50%;
+      }
+      .bounce {
+        -moz-animation: bounce 3s infinite;
+        -webkit-animation: bounce 3s infinite;
+        animation: bounce 3s infinite;
+      }
+      @-moz-keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          -moz-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -moz-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -moz-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+      @-webkit-keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -moz-transform: translateY(-30px);
+          -ms-transform: translateY(-30px);
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -moz-transform: translateY(-15px);
+          -ms-transform: translateY(-15px);
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
